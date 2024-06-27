@@ -4,7 +4,7 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
-      transparent_background = true,
+      transparent_background = false,
       integrations = {
         aerial = true,
         alpha = true,
@@ -40,11 +40,21 @@ return {
         which_key = true,
       },
     },
-  }, -- and this
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "catppuccin-mocha",
-  --   },
-  -- },
+
+    config = function()
+      require("catppuccin").setup({
+        color_overrides = {
+          -- all = {
+          --   text = "#ffffff",
+          -- },
+          mocha = {
+            base = "#000000",
+            mantle = "#000000",
+            crust = "#000000",
+          },
+        },
+        transparent_background = true,
+      })
+    end,
+  },
 }

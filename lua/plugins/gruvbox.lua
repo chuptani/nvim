@@ -5,13 +5,7 @@ return {
     opts = {
       transparent_mode = true,
     },
-  },
 
-  --   {
-  --     "LazyVim/LazyVim",
-  --     opts = {
-  --       colorscheme = "gruvbox",
-  --     },
-  --   },
+    config = function() end,
+  },
 }
--- hello

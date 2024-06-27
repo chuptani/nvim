@@ -12,8 +12,8 @@ return {
     opts = {
       servers = {
         pyright = {
-          -- mason = false,
-          -- autostart = false,
+          -- mason = true,
+          -- autostart = true,
         },
         ruff_lsp = {
           mason = false,
