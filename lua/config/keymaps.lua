@@ -7,9 +7,10 @@
 -- use `vim.keymap.set` instead
 local map = vim.keymap.set
 
-map("n", "<leader>E", "<cmd>Explore<CR>", { desc = "Toggle Explore (cwd)" })
-
-map("n", "<leader>e", "<cmd>Explore .<CR>", { desc = "Toggle Explore (root)" })
+-- { "nvim-telescope/telescope.nvim", lazy = false },
+-- map("n", "<leader>E", "<cmd>Explore<CR>", { desc = "Toggle Explore (cwd)" })
+--
+-- map("n", "<leader>e", "<cmd>Explore .<CR>", { desc = "Toggle Explore (root)" })
 
 -- function ToggleExplore()
 --   if vim.fn.exists("g:expl_flag") and vim.g.expl_flag == 1 then
