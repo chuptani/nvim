@@ -5,7 +5,7 @@ return {
     config = function()
       require("catppuccin").setup({
         github_colors = {
-          base0 = "#000000",
+          -- base0 = "#000000",
         },
       })
     end,
