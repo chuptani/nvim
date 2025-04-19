@@ -23,7 +23,7 @@ map("n", "<Leader>ac", function()
 end, { noremap = true, silent = true, desc = "Clear the register 'a" })
 
 -- <leaderv>, vimtex
-del("n", "<localleader>l")
+-- del("n", "<localleader>l")
 map("n", "<leader>v", "", { desc = "vimtex" })
 map("n", "<leader>va", ":VimtexContextMenu<CR>", { desc = "Vimtex Context Menu", silent = true })
 map("n", "<leader>vv", "<plug>(vimtex-view)", { desc = "Vimtex View", silent = true })

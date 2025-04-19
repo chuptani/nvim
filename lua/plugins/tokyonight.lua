@@ -1,12 +1,12 @@
 return {
-  -- add dracula
-  { "folke/tokyonight.nvim" },
-
-  -- Configure LazyVim to load dracula
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
-    },
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("tokyonight").setup({
+        transparent = false,
+      })
+    end,
   },
 }

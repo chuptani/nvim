@@ -9,3 +9,20 @@
 --   else
 --     vim.cmd("Explore")
 --   end
+
+
+
+-- require("lspconfig").pylsp.setup({
+--   settings = {
+--     pylsp = {
+--       plugins = {
+--         pylsp_mypy = {
+--           enabled = true,
+--         },
+--         pycodestyle = {
+--           maxLineLength = 100,
+--         },
+--       },
+--     },
+--   },
+-- })

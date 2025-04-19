@@ -2,12 +2,13 @@ return {
   {
     "rose-pine/neovim",
     lazy = true,
-  },
-
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "rose-pine",
-    },
+    priority = 1000,
+    config = function()
+      require("rose-pine").setup({
+        styles = {
+          transparency = true,
+        },
+      })
+    end,
   },
 }
