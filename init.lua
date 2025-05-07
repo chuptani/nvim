@@ -1,6 +1,9 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
+-- require("venv-selector").setup({
+-- })
+
 require("lspconfig").arduino_language_server.setup({
   cmd = {
     "arduino-language-server",
@@ -11,4 +14,4 @@ require("lspconfig").arduino_language_server.setup({
   },
 })
 
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme rose-pine-moon")
