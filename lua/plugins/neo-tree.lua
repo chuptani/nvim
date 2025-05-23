@@ -1,15 +1,8 @@
 return {
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    config = function()
-      require("neo-tree").setup({
-        window = {
-          position = "float",
-        },
-        filesystem = {
-          -- hijack_netrw_behavior = "open_current",
-        },
-      })
-    end,
-  },
+  "nvim-neo-tree/neo-tree.nvim",
+  opts = function(_, opts)
+    opts.window = opts.window or {}
+    opts.window.position = "float"
+    return opts
+  end,
 }
