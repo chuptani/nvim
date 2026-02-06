@@ -14,5 +14,4 @@ require("lspconfig").arduino_language_server.setup({
   },
 })
 
--- vim.cmd("colorscheme rose-pine-moon")
 vim.cmd("colorscheme github_dark_default")
