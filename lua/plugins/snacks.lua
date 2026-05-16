@@ -5,7 +5,7 @@ return {
       sources = {
         explorer = {
           auto_close = true,
-          layout = { preset = "default" },
+          layout = { preset = "default", preview = true },
           -- preview = true
         },
       },
